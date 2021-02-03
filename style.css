@@ -1,0 +1,92 @@
+
+/* 
+Web: Comanda del Chiringuito
+Alumno: Daniel Cabello Duarte
+Fecha: 8 diciembre
+*/
+
+html {
+	background-color: black;
+	/*Se pone un fondo a la página 
+	de color negro para que quede 
+	homogeno con el marco negro*/
+}
+#contenedor {
+	border: black 50px solid;
+	box-sizing: border-box;
+	/*Aqui le damos estilo al contenedor que acoge
+	toda la web, creamos un borde negro sólido y de 50px.
+	El box-sizing es para que quede en forma de caja.*/
+}
+
+#cabecera {
+	background-color: white;
+	margin-top: 0px;
+	height: 150px;
+	text-align: center;
+	/*La cabecera de color blanco y margin-top 0px
+	para que no queden espacios entre el marco y el texto.
+	El text align center para alinear en el centro el texto.*/
+}
+
+p {
+	margin: 0px;
+	/*Declarar un margen 0 para los párrafos, 
+	sino se descuadraría todo*/
+}
+
+#contenido {
+	background-color: gainsboro;
+	width: 75%;
+	padding: 25px;
+	height: 350px;
+	text-align: center;
+		/*La caja que ocupa el div cajaVariable*/
+}
+
+#menuDerecha {
+	width: 25%;
+	margin: 0px;
+	padding: 5px;
+	border: #e8e8e8 5px solid;
+	background-color: white;
+	/*Aqui ajustamos el menú para que ocupe un 25%
+	y con un borde sólido de 5px*/
+}
+
+#menuDerecha summary {
+		text-align: center;
+		/*Para alinear las opciones dentro del menú interactivo
+		y no el el menú en si.*/
+}
+
+#pieDePágina {
+	background-color: white;
+	text-align: center;
+	height: 190px;
+	margin: 0px;
+	margin-left: -50px;
+	margin-right: -50px;
+	/*Los margin left y right -50 son para que se ajuste
+	al marco y ak borde de la página*/
+}
+
+#cajaVariable {
+		display:flex;
+		/*Hace que se ajuste a diferentes 
+		tamaños de la pantalla*/
+}
+
+@media screen and (max-width:600px){
+		/* solo se aplica cuando el viewport es estrecho, como máximo de 600 puntos */
+		/* hay que definir aquí selectores y estilos */
+		/* al menos para las columnas ancha y estrecha de la zona de contenidos de la pagina */
+		#cajaVariable {
+			display:unset;
+		}
+		
+		#contenido, #menuDerecha{
+			width:100%;	
+		}
+}
+
