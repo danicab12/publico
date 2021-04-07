@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+CSS
+módulo: Lenguajes de Marcas
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>CSS: Position con jQuery</title>
+	
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+
+/*
+		EXPLICACIONES BREVES
+		
+		Excepto en static, que es el posicionamiento por defecto, el natural, 
+		en el resto de los casos se produce una "elevación" que hace
+		que el elemento posicionado quede superpuesto con el resto.
+		Es un efecto como si flotara pero sin tener exclusividad en
+		el sitio de destino, como si tuviera un z-index.
+		
+		position:relative;
+		el contenido mantiene su espacio respecto de donde le tocaría
+		de forma natural, y lo amplía
+	
+		position:absolute;
+		el contenido se desplaza desde donde le tocaría
+		de forma natural, permitiendo que su antiguo sitio sea ocupado
+
+		position:fixed;
+		el contenido se desplaza desde donde le tocaría
+		de forma natural, quedado anclado al marco u origen del viewport,
+		y permitiendo que su antiguo sitio sea ocupado
+	
+		position:sticky;
+		el contenido mantiene su espacio respecto de donde le tocaría
+		de forma natural, y lo amplía. Luego con el scroll,
+		queda fijo al llegar a la posición indicada
+	
+
+		top - bottom - left - right:
+		parámetros de distancia a la que quedará respecto de su elemento contenedor
+		
+*/
+
+		* {
+			color:rgba(0,0,0,0.4);
+		}
+
+		em {
+			font-size:2em;
+			color:rgba(0,0,0,1);
+			background-color:rgba(0,0,0,0.2);
+		  
+		}
+
+		li {
+			border: 1px solid;
+			font-size:20px;
+			padding-top:5px;
+			padding-bottom:5px,
+		}
+
+		li.diferente {
+		  position: static;
+		  color:black;
+		  font-weight:900;
+		  background-color:rgba(0,255,0,0.4);
+		  top: 40px;
+		  left: 120px;
+		}
+		
+		
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>CSS: position</h1>
+		<h2>static, relative, absolute, fixed y sticky </h2>
+		<h3>EJEMPLOS </h3>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<p>Aplicando position: <em id="msg">static</em> (top:40px, left:120px).</p>
+		<br/>
+			<label for="pos">Probar position:</label>
+			<select name="pos" id="pos">
+				<option value="static" selected>static</option>
+				<option value="relative">relative</option>
+				<option value="absolute">absolute</option>
+				<option value="fixed">fixed</option>
+				<option value="sticky">sticky</option>
+			</select>
+		<br/>
+		<ol>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li id="ese" class="diferente"> elemento de texto con posicion diferente </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+			<li> elemento de texto con posicion por defecto - static </li>
+		</ol>
+
+
+
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript. 
+
+		$(document).ready(function() {
+			$( "select" ).change(function () {
+				var str = "";
+				$( "select option:selected" ).each(function() {
+					str += $( this ).text() + " ";
+				});
+				$("#ese").css("position",str);
+				$( "#msg" ).text( str );
+			})
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: practicas en clases de LLMM
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>Ajuste de texto alrededor de imagenes</title>
+	
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+	*{
+		box-sizing:border-box;
+	}
+	
+	img.derecha {
+		float:right;
+		margin:5px;
+		/* width:420px; */
+		/* height:220px; */
+		width:25%;
+		height:auto;
+		object-fit:cover;
+	}
+
+	img.izquierda {
+		float:left;
+		clear:right;
+		margin:5px;
+		/* width:600px; */
+		/* height:300px; */
+		width:60%;
+		height:auto;
+		object-fit:cover;
+	}
+	
+	</style>
+	
+</head>
+
+
+<body>
+
+	<!-- cabecera de pagina -->
+	<header>
+		<h1>AJUSTE DE TEXTO ALREDEDOR DE IMAGENES</h1>
+		<br/>
+	</header>
+	
+	<!-- bloque de contenido de la pagina -->
+	<main>
+		<img class="derecha" src="media/condor.jpg"/>
+		<p>El Cóndor Andino (Vultur gryphus) también conocido como el Cóndor de los Andes o simplemente Cóndor es el ave volador viva más grande del planeta, llegando a medir 1,42 m de alto, 3,30 m de envergadura y el macho puede llegar a pesar hasta 15 kg y la hembra hasta 11 kg.</p>
+		<p>El cóndor es una gran ave de color negro con un plumaje blanco alrededor de su cuello y en la punta de sus alas, su cabeza carece de plumas y es de un tono rojizo, la cual cambia de color dependiendo del estado emocional del ave, el macho cuenta con una cresta.</p>
+		<p>Su pico es bordeado con terminación en gancho y cortante, con grandes alas y patas no prensiles, es decir que no sirven para agarrar su presa debido a que poseen uñas cortas y no son curvas, pero le permiten sujetar la carroña.</p>
+		<img class="izquierda" src="media/condor2.jpg"/>
+		<p>Su plumaje es de color café mientras alcanzan la madures, este empezara a mudar a negro. Los ojos de los machos son de color café y los ojos de las hembras son de color rojizo.</p>
+		<p>Es una de las aves más longevas del mundo, viviente hasta 75 años. Su plumaje es denso, lo que lo mantiene abrigado en climas gélidos.</p>
+		<p>El polluelo intenta volar a los 6 meses de haber nacido, y a los 9 meses ya está listo para acompañar a sus padres, aprendiendo a sobrevivir. Pasado 2 años está listo para mostrar su lugar sobre la carroña.</p>
+	</main>
+
+
+	<!-- pie de pagina -->
+	<footer>
+		<br/><br/><br/>
+		<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+	</footer>
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--
+HTML
+web o pagina: CSS3 y HTML5
+autor: Carlos Boni
+fecha: Febrero 2021
+-->
+
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	
+	<!-- importante SEO para la etiqueta del navegador -->
+	<title>GRILLAS</title>
+	
+	<!-- una fuente de Google -->
+	<link rel="preconnect" href="https://fonts.gstatic.com"/>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet"/>
+	
+	<!-- una hoja de estilos externa-->
+	
+	<!-- una hoja de estilos personalizada-->
+	<link href="00-modelo.css" rel="stylesheet"/>
+	
+	<!-- iconos u otros elementos externos -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	
+	<!-- solo aquellos estilos que solo aplican a esta pagina -->
+    <style>
+		* {
+			font-family: 'Nunito', sans-serif;
+			box-sizing:border-box;
+		}
+		
+		body {
+			background: rgba(0, 0, 128, 0.1); /* Azul al 10% */
+			margin:0px;
+			width:100vw;
+		}
+		
+		.grid-container {
+		  position: sticky;
+		  top: 0px;
+		  display: grid;
+		  grid-template-columns: 1fr 2fr;
+		  grid-template-rows: 120px 100vh;
+		  grid-gap: 2px;
+		  background-color: red;
+		  padding: 2px;
+		}
+
+		.grid-item {
+		  background-color: rgba(255, 255, 255, 1); /* blanco */
+		  text-align: center;
+		  padding: 10px;
+		  
+		  font-size: 30px;
+		}
+
+		.item1 {
+		  grid-column: 1 / span 2;
+		  grid-row: 1;
+		  color:white;
+		  background-color:black;
+		  display:flex;
+		  align-items: center; 
+		  justify-content: center;
+		}
+
+
+	</style>
+	
+	<!-- scripts externos de librerias que usaremos, por ejemplo Bootstrap o JQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<!-- scripts externos de desarrollo propio en Javascript o JQuery -->
+	<script src="00-modelo.js"></script>
+	
+	<!-- scripts personalizados Javascript o JQuery -->
+	<script>
+		// aqui el codigo ...
+	</script>
+</head>
+
+
+<body>
+
+
+	<!-- bloque de contenido de la pagina -->
+	<div class="grid-container">
+	  <div class="grid-item item1"><h1>TÍTULO PRINCIPAL VISIBLE</h1></div>
+	  <div class="grid-item">2</div>
+	  <div class="grid-item">
+		 <footer>
+			<br/><br/><br/>
+			<div>&copy; 2020 <a href="https://carlosboni.com" target="_blank">Prof. Carlos Boni</a></div>
+		</footer>
+	   </div>  
+	</div>
+
+
+	<!-- pie de pagina -->
+
+
+	<script>
+		// seccion de codigo javascript 
+
+	</script>
+</body>
+</html>
