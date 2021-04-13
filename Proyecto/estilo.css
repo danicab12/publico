@@ -8,5 +8,99 @@ h2 {
 }
 
 body {
-	background-color: lightblue;
+	background-color: white;
 }
+
+*{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+.fotobanner {
+	width: 20%;
+	margin-left: 2px;
+}    
+
+.contenido {
+  border-style: ;
+  border-color: violet;
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+  overflow: hidden;
+   background-color: rgba(255, 255, 255, 0.8);
+    }    
+
+.marco {
+      display: grid;
+      border-style: ;
+      border-color: red;
+      overflow: visible;
+      grid-template-columns: 250px auto;
+      grid-template-rows: 150px 40px auto 40px;
+      grid-gap: 10px;
+      width: 100vw;
+      height: 100vh;
+    }
+    
+.encabezado {
+  border-style: ;
+  border-color: blue;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+    background-color: white;
+    }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+.active {
+  background-color: #4CAF50;
+}
+
+footer {
+	text-align: center;
+	color: gray;
+}    
+    
+    @media screen and (max-width:600px){
+      /* reparamos el estilo para pantallas estrechas */
+      
+      .navbar, .navbar a, .navbar>div, .dropbtn {
+        width:100%;
+        float: none;
+        display:block;
+      }
+        .dropdown-content a{
+        display:none;
+      }
+
