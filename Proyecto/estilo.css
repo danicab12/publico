@@ -18,10 +18,10 @@ body {
     }
 
 .contenido {
-  border-style: ;
-  border-color: violet;
-  grid-column: 2 / span 1;
-  grid-row: 3 / span 1;
+  border-style: solid;
+  border-color: green;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
   overflow: hidden;
    background-color: rgba(255, 255, 255, 0.8);
     }    
@@ -39,10 +39,10 @@ body {
     }
 
 footer {
-	grid-column: 2 / span 1;
- 	grid-row: 3 / span 1;
+	grid-column: 2 / span 2;
+ 	grid-row: 4 / span 1;
  	display: grid;
- 	border-color: red;
+ 	border-color: orange;
  	border-style: solid;
 }    
     
@@ -92,8 +92,8 @@ li a:hover {
 
 footer {
 	text-align: center;
-	color: gray;
-}    
+	color: black;
+}
     
     @media screen and (max-width:600px){
       /* reparamos el estilo para pantallas estrechas */
