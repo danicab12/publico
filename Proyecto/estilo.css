@@ -3,10 +3,10 @@
 	padding: 0;
 	margin: 0;
 }
-		
+
 .marco {
 	display: grid;
-	border-style: solid;
+	border-style: ;
 	border-color: red;
 	grid-template-columns: 250px auto;
 	grid-template-rows: 150px 40px auto 40px;
@@ -19,87 +19,83 @@
 		
 .encabezado {
 	border-style: solid;
+	margin: 5px;
 	border-color: blue;
 	grid-column: 1 / span 4;
-	grid-row: 1 / span 1;
+	grid-row: 1 / span 3;
 	overflow: hidden;
 	margin-bottom: 0px;
+}
+
+.encabezado img {
+	width: 100%;
+
 }
 
 .lado {
 	border-style: solid;
 	border-color: violet;
 	grid-column: 4 / span 1;
-	grid-row: 3 / span 1;
-	margin: 5px;
-}
-
-.lado2 {
-	border-style: solid;
-	border-color: violet;
-	grid-column: 1 / span 1;
-	grid-row: 3 / span 1;
+	grid-row: 8 / span 2;
 	margin: 5px;
 }
 		
 .contenido {
 	border-style: ;
 	border-color: violet;
-	grid-column: 2 / span 2;
-	grid-row: 3 / span 1;
+	grid-column: 1 / span 3;
+	grid-row: 8 / span 2;
 	margin: 5px;
 	background-color: #f8f9fa; 
 	border-radius: 3px;
+	padding: 15px;
+}
+
+.contenido img {
+	width: 50%;
+	border-radius: 4px;
+	margin-left: 180px;
+	margin-top: 10px;
 }
 
 .pie {
-	border-style: solid;
+	border-style: ;
 	border-color: aqua;
 	grid-column: 1 / span 4;
-	grid-row: 4 / span 1;
+	grid-row: 9 / span 1;
 	text-align: center;
 	color: white;
 	background-color: #333;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #333;
-  border-radius: 5px;
-  margin-top: 95px;
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+  grid-column: 1 / span 4;
+  grid-row: 3 / span 2;
+
 }
 
 .navbar a {
   float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 12px;
+  color: white;
   text-decoration: none;
   font-size: 17px;
 }
 
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #000;
 }
 
-.navbar a.active {
+.active {
   background-color: #4CAF50;
-  color: white;
 }
 
-.content {
-  padding: 16px;
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
