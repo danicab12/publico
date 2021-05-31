@@ -38,6 +38,7 @@
 	grid-row: 11 / span 2;
 	margin: 5px;
 	margin-bottom: 100px;
+	max-width: 40%;
 }
 
 .lado i {
