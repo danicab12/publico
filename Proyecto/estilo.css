@@ -407,7 +407,7 @@ p{
 	width: 120px;
 	background-color: gray;
 	border-color: gray;
-	margin-left: 100px;
+	margin-left: 20%;
 }
 
 .logout button:hover {
