@@ -32,10 +32,31 @@
 
 .lado {
 	border-style: ;
+	background-color: #d7dfe0;
 	border-color: violet;
 	grid-column: 4 / span 1;
 	grid-row: 11 / span 2;
 	margin: 5px;
+	margin-bottom: 100px;
+}
+
+.lado i {
+	margin-left: 10px;
+	font-size: 16px;
+}
+
+.lado h2 {
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.lado svg {
+	margin-left: 50px;
+}
+
+.lado p {
+	margin-left: 20px;
+	margin-right: 20px;
 }
 		
 .contenido {
@@ -47,6 +68,7 @@
 	background-color: #f8f9fa; 
 	border-radius: 3px;
 	padding: 15px;
+	margin-bottom: 100px;
 }
 
 .contenido img {
@@ -60,17 +82,33 @@
 	border-style: ;
 	border-color: aqua;
 	grid-column: 1 / span 4;
-	grid-row: 12 / span 1;
+	grid-row: 12 / span 1;	
+
+}
+
+.pie p {
 	text-align: center;
 	color: white;
 	background-color: #333;
+	font-size: 16px;
+	padding: 10px;
 }
 
+.pie a {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+
+.pie a:hover {
+	color: skyblue;
+}
 
 
 nav {
 	margin: 27px auto 0;
-
 	position: relative;
 	width: 590px;
 	height: 50px;
@@ -154,13 +192,39 @@ body {
 	font-family: 'Cherry Swash', cursive;
 }
 
-p {
+.contenido p {
     bottom: 20px;
+    width: 100%;
+    text-align: left;
+    color: ;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+.presentacion p {
+	    bottom: 20px;
     width: 100%;
     text-align: center;
     color: ;
     font-family: 'Cherry Swash',cursive;
     font-size: 16px;
+}
+
+.contenido button {
+	background-color: #34495e;
+	width: 300px;
+	margin-left: 250px;
+}
+
+.contenido button>a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+
+}
+
+.contenido a:hover {
+	color: skyblue;
 }
 
 span {
@@ -175,16 +239,15 @@ body{
   background-color: #ab4493; 
 }
 
-
-.contact_form{  
-  width: 460px; 
+.contact_form{
   height: auto;
-  margin: 80px auto;
+  margin: 0px;
+  margin-left: 20%;
   border-radius: 10px;  
-  padding-top: 30px;
+  padding-top: 0px;
   padding-bottom: 20px;  
   background-color: #fbfbfb; 
-  padding-left: 30px; 
+  padding-left: 0px; 
 }
 
 
@@ -201,7 +264,7 @@ input{
   margin-bottom: 20px; 
 }
 
-
+	 
 textarea{
   background-color: #fbfbfb; 
   width: 405px; 
@@ -223,6 +286,27 @@ label{
 }
 
 
+.formulario button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px; 
+  margin-left: 0%;  
+  text-transform: uppercase;
+  background-color: #34495e; 
+  border-color: #34495e; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+.formulario button:hover {
+	background-color: skyblue;
+	border-color: skyblue;
+}
+
 button{
   height: 45px; 
   padding-left: 5px;
@@ -237,7 +321,6 @@ button{
   width: 420px;   
   cursor: pointer;
 }
-
 
 button p{
   color: #fff; 
@@ -260,6 +343,7 @@ h1{
   text-align: left; 
   padding-bottom: 20px; 
   color: white;
+  margin-top: 1px;
 }
 
 
@@ -273,6 +357,7 @@ h3{
 p{
   font-size: 14px; 
   color: #0e0e0e; 
+  text-align: center;
 }
 
 
@@ -295,4 +380,37 @@ p{
 .formulario textarea:focus{
   outline:0;
   border: 1px solid #97d848;
+}
+
+.ruta p {
+	margin-left: 370px;
+	margin-top: 40px;
+	font-size: 18px;
+}
+
+.logout {
+	border-style: ;
+	background-color: #ECEFF1;
+	border-color: blue;
+	grid-column: 3 / span 2;
+	grid-row: 9 / span 2;
+	margin-left: 100px;
+	margin-right: 20px;
+}
+
+.logout p {
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+.logout button {
+	width: 120px;
+	background-color: gray;
+	border-color: gray;
+	margin-left: 100px;
+}
+
+.logout button:hover {
+	background-color: #76b852;
+	border-color: #76b852;
 }
