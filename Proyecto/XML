@@ -1,0 +1,30 @@
+<registrados>
+  <usuario>
+    <nombre>USR1</nombre>
+    <clave>clave1</clave>
+  </usuario>
+  <usuario>
+    <nombre>USR2</nombre>
+    <clave>clave2</clave>
+  </usuario>
+  <usuario>
+    <nombre>USR3</nombre>
+    <clave>clave3</clave>
+  </usuario>
+  <usuario>
+    <nombre>USR4</nombre>
+    <clave>clave4</clave>
+  </usuario>
+  <usuario>
+    <nombre>DANIEL</nombre>
+    <clave>CABELLO</clave>
+  </usuario>
+  <usuario>
+    <nombre>DANIEL</nombre>
+    <clave>CABELLO</clave>
+  </usuario>
+  <usuario>
+    <nombre>CANDIDO</nombre>
+    <clave>VIDAL</clave>
+  </usuario>
+</registrados>
