@@ -2,30 +2,26 @@
 <html lang="es">
 <head>
   <link href="estilo-login.css" rel="stylesheet"/>
+  <meta charset="utf-8">
   <script src="loginXML.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <title>Login Proyecto</title>
 </head>
 <body onload="controlar()">
   <div class="login-page">
   <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="name"/>
-      <input type="password" placeholder="password"/>
-      <input type="text" placeholder="email address"/>
-      <button>Crear cuenta</button>
-      <p class="message">¿Ya estás registrado? <a href="Login.html">Inicia Sesión</a></p>
-    </form>
     <form class="login-form" method="GET" id="ingresar" name="miFormulario" onSubmit="return guardaUsr()">
       <input type="text" placeholder="username" id="usuario" name="usuario" maxlength="10" required/>
       <input type="password" placeholder="password" name="formClave" required/>
       <button>Iniciar Sesión</button><br>
-      <button onclick="desconectar()">LIMPIAR MEMORIA</button>
-      <p class="message">¿No estás registrado? <a href="Register.html">Create una cuenta</a></p>
     </form>
+      <button id="desconectar" onclick="desconectar()">DESCONECTAR</button>
+      <button onclick="desconectar()">LIMPIAR MEMORIA</button>
+      <p class="message">¿No tienes cuenta? <a href="index.html">Accede como invitado</a></p>
   </div>
 </div>
   <script>
-  // seccion de codigo javascript 
+    // seccion de codigo javascript 
           
      function guardaUsr() {
       // guardo la variable nomUsr con el usuario ingresado en el formulario

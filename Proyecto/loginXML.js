@@ -89,7 +89,7 @@ function controlar(){
 				miFuncion(this);
 			}
 		};
-		xhr.open("GET", "https://carlosboniniklison.github.io/publico/ejercicios/xml/registrados.xml", true);
+		xhr.open("GET", "https://danicab12.github.io/publico/Proyecto/XML.xml", true);
 		xhr.send();
 	}
 

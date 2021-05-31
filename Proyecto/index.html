@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<link href="estilo.css" rel="stylesheet"/>
+	<script src="loginXML.js"></script>
+
 	<title>Público</title>
 	<script>
 		function myFunction() {
@@ -23,8 +25,8 @@
 		<nav>
 			<a href="index.html">Inicio</a>
 			<a href="Productos.html">Productos</a>
-			<a href="Q&A.html">Q&A</a>
 			<a href="Nosotros.html">Nosotros</a>
+			<a href="tutoriales.html">Vídeos</a>
 			<a href="Contacto.html">Contacto</a>
 			<div class="animation start-home"></div>
 		</nav>
@@ -38,14 +40,14 @@
 			<main> <!-- aqui podemos tambien usar section y article -->
 					<p>Bienvenido/a <span id="aqui"></span></p>
 				<form name="miFormulario" onSubmit="return borraUsr()">
-		  				<button>Cerrar Sesión</button>
+		  				<button id="#desconectar">Cerrar Sesión</button>
 				</form>
 			</main>
 		</div>	
 
 	
 
-	<script>
+<script>
 	// seccion de codigo javascript 
 		 // la siguiente linea recupera el valor guardado previamente
 		 // con sessionStorage funciona solo recargando, con localStorage incluso apagando el PC
@@ -71,9 +73,21 @@
   				<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
 			</svg>
 					<a class="bi bi-instagram" href="https://www.instagram.com/daniicabeello/"><i>@daniicabeello</i></a>
-						<br><br><br>
+						<br><br>
+			      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="52 42 88 66">
+          <path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/>
+          <path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/>
+          <path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/>
+          <path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/>
+          <path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/>
+      </svg>    
+          <b><a class="bi bi-instagram" href="mailto:danicabelloduarte@gmail.com"><i>danicabelloduarte@gmail.com</i></a></b><br><br>
 
-					<p>Correo: <a href="mailto:danicabelloduarte@gmail.com">danicabelloduarte@gmail.com</a></p>
+
+          	<img style="width: 40%; margin-left: 10%;"src="imagenes/instagram.png">
+
+
+
 		</div>
 		<div class="contenido">
 			<h1>Los mejores productos para empezar con la domótica.</h1><br>
@@ -89,6 +103,8 @@
 				<p>Me presento, soy un alumno de 1º curso de DAM & DAW, elegí cursar un doble ciclo para estar lo más preparado posible a la salida laboral. El ciclo formativo de DAW es el que más me llama la atención a día de hoy junto con otros cursos de la academia Cenec, como el bitcoin u otros cursos formativos.</p><br><br>
 
 				<p>Esto es un proyecto que integra tres asignaturas, sistemas informáticos, lenguaje de marcas y entornos de desarrollo. Mi proyecto se basa en una página web dedicada a la información sobre productos de domótica donde podrás encontrar una lista de los productos que considero más útiles y accesibles del mercado.</p><br>
+
+					<img style="width: 20%; margin-left: 35%;"src="imagenes/cenec.jpg">
 		</div>		
 		</div>
 		<div class="pie"><p>©2021 Daniel Cabello Duarte</p>

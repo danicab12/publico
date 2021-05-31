@@ -34,15 +34,16 @@
 	border-style: ;
 	background-color: #d7dfe0;
 	border-color: violet;
-	grid-column: 4 / span 1;
-	grid-row: 11 / span 2;
-	margin: 5px;
-	margin-bottom: 100px;
-	max-width: 40%;
+	grid-column: 3 / span 2;
+	grid-row: 10 / span 1;
+	padding: 5px;
+}
+
+.lado b {
+	margin-left: 10px;
 }
 
 .lado i {
-	margin-left: 10px;
 	font-size: 16px;
 }
 
@@ -54,22 +55,15 @@
 .lado svg {
 	margin-left: 50px;
 }
-
-.lado p {
-	margin-left: 20px;
-	margin-right: 20px;
-}
 		
 .contenido {
 	border-style: ;
 	border-color: violet;
-	grid-column: 1 / span 3;
-	grid-row: 11 / span 2;
-	margin: 5px;
+	grid-column: 1 / span 2;
+	grid-row: 10 / span 1;	
 	background-color: #f8f9fa; 
 	border-radius: 3px;
-	padding: 15px;
-	margin-bottom: 100px;
+	padding: 20px;
 }
 
 .contenido img {
@@ -118,7 +112,7 @@ nav {
 	font-size: 0;
 }
 nav a {
-	line-height: 50px;
+	line-height: 10px;
 	height: 100%;
 	font-size: 15px;
 	display: inline-block;
@@ -193,6 +187,12 @@ body {
 	font-family: 'Cherry Swash', cursive;
 }
 
+
+
+.contenido img {
+	max-width: 600px;
+}
+
 .contenido p {
     bottom: 20px;
     width: 100%;
@@ -203,7 +203,7 @@ body {
 }
 
 .presentacion p {
-	    bottom: 20px;
+	bottom: 20px;
     width: 100%;
     text-align: center;
     color: ;
@@ -213,7 +213,7 @@ body {
 
 .contenido button {
 	background-color: #34495e;
-	width: 300px;
+	width: 400px;
 	margin-left: 250px;
 }
 
@@ -221,6 +221,7 @@ body {
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
+	font-size: 15px;
 
 }
 
@@ -242,13 +243,51 @@ body{
 
 .contact_form{
   height: auto;
-  margin: 0px;
-  margin-left: 20%;
+  width: 45%;
+  border-style: solid;
+  border-color: black;
+  align-content: left;
+  margin-left: 25%;
   border-radius: 10px;  
   padding-top: 0px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 0px; 
+  padding-bottom: 0px;  
+  background-color: #f8f9fa; 
+}
+
+.contenidoForm {
+	border-style: ;
+	border-color: violet;
+	grid-column: 1 / span 3;
+	grid-row: 10 / span 2;	
+	background-color: #f8f9fa; 
+	border-radius: 3px;
+	padding: 1px;
+}
+
+.ladoForm {
+	border-style: ;
+	background-color: #d7dfe0;
+	border-color: violet;
+	grid-column: 4 / span 1;
+	grid-row: 10 / span 1;
+	padding: 10px;
+}
+
+.ladoForm b {
+	margin-left: 10px;
+}
+
+.ladoForm i {
+	font-size: 15px;
+}
+
+.ladoForm h2 {
+	margin-left: 70px;
+	margin-top: 20px;
+}
+
+.ladoForm svg {
+	margin-left: 50px;
 }
 
 
@@ -287,21 +326,7 @@ label{
 }
 
 
-.formulario button{
-  height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px; 
-  margin-left: 0%;  
-  text-transform: uppercase;
-  background-color: #34495e; 
-  border-color: #34495e; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
-  cursor: pointer;
-}
+
 
 .formulario button:hover {
 	background-color: skyblue;
@@ -310,17 +335,18 @@ label{
 
 button{
   height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
+  padding-left: 10px;
+  padding-right: 0px;   
   margin-bottom: 20px; 
-  margin-top: 10px;   
+  margin-top: 10px;
+  margin-left: 100px;   
   text-transform: uppercase;
   background-color: #34495e; 
   border-color: #34495e; 
   border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
+  border-radius: 10px;   
   cursor: pointer;
+  width: 408px; 
 }
 
 button p{
@@ -341,17 +367,18 @@ span{
 
 h1{
   font-size: 39px;  
-  text-align: left; 
+  text-align: center; 
   padding-bottom: 20px; 
   color: white;
-  margin-top: 1px;
+  margin-top: 0px;
 }
 
 
 h3{
   font-size: 16px; 
   padding-bottom: 30px;
-  color: #0e0e0e;   
+  color: #0e0e0e;
+  text-align: center;   
 }
 
 
@@ -383,32 +410,52 @@ p{
   border: 1px solid #97d848;
 }
 
-.ruta p {
-	margin-left: 370px;
-	margin-top: 40px;
+.rutaForm {
+	border-style: ;
+	background-color: #ECEFF1;
+	border-color: blue;
+	grid-column: 4 / span 1;
+	grid-row: 9 / span 1;
+}
+
+.rutaForm p, a {
+	margin-top: 20px;
 	font-size: 18px;
+	text-decoration: none;
+}
+
+.ruta {
+	border-style: ;
+	background-color: #ECEFF1;
+	border-color: blue;
+	grid-column: 3 / span 2;
+	grid-row: 9 / span 1;
+}
+
+.ruta p, a {
+	margin-top: 20px;
+	font-size: 18px;
+	text-decoration: none;
 }
 
 .logout {
 	border-style: ;
 	background-color: #ECEFF1;
 	border-color: blue;
-	grid-column: 3 / span 2;
-	grid-row: 9 / span 2;
-	margin-left: 100px;
-	margin-right: 20px;
+	grid-column: 1 / span 1;
+	grid-row: 9 / span 1;
 }
 
 .logout p {
-	margin-top: 20px;
+	text-align: left;
 	margin-left: 10px;
 }
 
 .logout button {
-	width: 120px;
 	background-color: gray;
 	border-color: gray;
-	margin-right: 10%;
+	margin-left: 10px;
+	width: 50%;
 }
 
 .logout button:hover {
